@@ -3,15 +3,15 @@
 /**
  * Description: function that prints 10 times the alphabet, in lowercase.
  *
+ * Retyr: x10 a-z
  */
-
 void print_alphabet_x10(void)
 {
-    int i;
-    int j;
-    for(i = 0; i < 10; i++)
+    int i, j;
+
+    for (i = 0; i < 10; i++)
     {
-        for(j = 'a'; j <= 'z'; j++ )
+        for (j = 'a'; j <= 'z'; j++ )
         {
             _putchar(j);
         }
