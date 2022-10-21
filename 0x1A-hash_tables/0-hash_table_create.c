@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "hash_tables.h"
+#include <stdlib.h>
 /**
  * hash_table_create:  a function that creates a hash table
  * @size: the size of the array
@@ -30,7 +30,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
     for (i = 0; i < size; i++)
     {
-        hash_tb[i] = NULL;
+        hash_tb->array[i] = NULL;
     }
 
     return (hash_tb);
